@@ -24,10 +24,10 @@ import MovieCard from './MoviesCard';
     const data = await response.json();
     setMovies(data.Search);
    }
-   
+   // eslint-disable-next-line
     useEffect(() => {
       searchMovies(searchTerm);
-    }, []);
+    });
 
 
     return(
