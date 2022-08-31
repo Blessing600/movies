@@ -22,7 +22,7 @@ import MovieCard from './MoviesCard';
    const searchMovies = async (title: string) =>{
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
-    setMovies(data.search);
+    setMovies(data.Search);
    }
    
     useEffect(() => {
@@ -36,25 +36,25 @@ import MovieCard from './MoviesCard';
           <h1>MovieLand</h1>
 
           <div className="search">
-       {/* when a user changes the input field set searchTerm to the value gotten from the input  */}
+    
             <input
             placeholder="Search for movies"
             value= {searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             />
-               {/* when this icon is clicked the searchMovies function is triggered to search for movies on the api */}
+              
             <img
               src={SearchIcon}
               alt="search"
               onClick={() => searchMovies(searchTerm)}
             />
           </div>
-             {/* if the array of movies is empty is 0 we render no  movies found else we render the the list of movies with the  movieCard */}
+         
             {movies?.length > 0
               ? (
               <div className="container">
-                  {movies.map((movie) =>(
-                    <MovieCard movie={movie} />
+                  {movies.map((movie, index) =>(
+                    <MovieCard key={index} movie={movie} />
                   ))}
               </div>
               ) : (
