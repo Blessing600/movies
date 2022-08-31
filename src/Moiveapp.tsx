@@ -16,7 +16,7 @@ import MovieCard from './MoviesCard';
   }
   const [movies, setMovies] = useState<MovieType[]>([]);
   const [searchTerm, setSearchTerm] = useState <string> ('spiderman'); 
-  const API_URL = ' http://www.omdbapi.com/?i=tt3896198&apikey=1019ac51' 
+  const API_URL = ' https://www.omdbapi.com/?i=tt3896198&apikey=1019ac51' 
  
 
    const searchMovies = async (title: string) =>{
