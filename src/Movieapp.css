@@ -21,7 +21,7 @@ body {
 .app {
   padding: 4rem;
 
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -39,11 +39,16 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .search {
-  width: 71%;
-  margin: 4rem 0 2rem;
+  width: 50%;
+  /* margin: 4rem 0 2rem; */
 
   display: flex;
   align-items: center;
