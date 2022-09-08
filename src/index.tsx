@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Moiveapp from './Moiveapp';
+import {Provider} from 'react-redux';
+import {store, persistor} from './reducer/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-     <Moiveapp />
+    <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <Moiveapp />
+    </PersistGate>
+    </Provider>
+
   </React.StrictMode>
 );
 

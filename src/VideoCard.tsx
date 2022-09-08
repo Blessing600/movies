@@ -5,7 +5,7 @@ const VideoCard = ({ video}:any)=>{
     return (
      
 
-      <video width="320" height="240" controls>
+      <video width="340" height="500" controls>
         <source  src={video} />
       </video>
     );
