@@ -8,13 +8,6 @@ import { setMovies, setVideos } from './reducer/MovieSlice';
  const App = () => {
   const[isUploadLinkClicked, setUpload] = useState(false);
 
-  interface MovieType  {
-    Poster: string;
-    Title: string;
-    Type: string;
-    Year: string;
-    imdbID: string;
-  }
   const {movies} = useSelector((state: any) => state.moviesReducer)
   const {videos} = useSelector((state: any) => state.moviesReducer)
   const [searchTerm, setSearchTerm] = useState <string> ('spiderman'); 
