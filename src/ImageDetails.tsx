@@ -14,7 +14,7 @@ const ImageDetails = ({details}: {details?:any}) =>{
           </div>
 
           <div className='flex justify-center'>
-            <img className='w-[200px]' src={posts[postIndex].image}/>
+            <img className='w-[200px]' alt= "" src={posts[postIndex].image}/>
           </div>
 
           <div>

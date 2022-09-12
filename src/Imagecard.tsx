@@ -18,7 +18,7 @@ const Imagecard = ({post, index} : {post: any; index: any}) =>{
           </div>
 
           <div>
-            <img className="bg-white w-96 h-80 object-contain" src={post.image}/>
+            <img className="bg-white w-96 h-80 object-contain" alt= "" src={post.image}/>
           </div>
 
           <div>
