@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { useDispatch } from "react-redux";
-import Image1 from './Image1.png';
-import ImageDetails from "./ImageDetails";
 import { setCurrentPage, setPostIndex } from "./reducer/MovieSlice";
 
 ;

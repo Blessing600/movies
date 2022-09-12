@@ -1,7 +1,6 @@
 import './Movieapp.css';
 import Button from './Button';
-import { useEffect, useRef, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import AllPostPages from './AllPostsPage'
 import SinglePostPage from './ImageDetails'
 import FormCard from './FormCard';

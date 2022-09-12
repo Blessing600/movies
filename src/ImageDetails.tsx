@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux';
-import Image1 from './Image1.png';
 import { setCurrentPage } from './reducer/MovieSlice';
 
 const ImageDetails = ({details}: {details?:any}) =>{
